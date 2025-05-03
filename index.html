@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>U&D Stream - Your Favourite Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="logo-animation">
+            <img src="logo.png" alt="U&D Stream Logo">
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <!-- Brand/Logo -->
+            <li class="brand">
+                <img src="logo.png" alt="U&D Stream">
+                <span class="brand-text">U&D Stream</span>
+            </li>
+
+            <!-- Navigation Links -->
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>Discover</li>
+
+            <!-- Search Bar -->
+            <li class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search songs, artists...">
+                </div>
+            </li>
+
+            <!-- Notification & Profile -->
+            <li class="notification-container">
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="notification-dropdown">
+                    <div class="notification-item">
+                        <i class="fas fa-music"></i>
+                        <span>New release: Summer Vibes</span>
+                    </div>
+                    <div class="notification-item">
+                        <i class="fas fa-user-plus"></i>
+                        <span>5 new followers</span>
+                    </div>
+                    <div class="notification-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Liked your playlist</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="profile-container">
+                <div class="profile">
+                    <img src="profile.jpg" alt="Profile"> <!-- This will be replaced -->
+                    <span>Username</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="profile-dropdown">
+                    <a href="#"><i class="fas fa-user"></i> Profile</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#"><i class="fas fa-moon"></i> <span class="theme-toggle-text">Dark Mode</span></a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </li>
+
+
+
+
+
+
+            <!-- Dark/Light Mode Toggle (Mobile) -->
+            <li class="theme-toggle-mobile">
+                <i class="fas fa-moon"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <div class="player-header">
+                <div class="header-gradient"></div>
+                <h1 class="playlist-title">
+                    <i class="fas fa-headphones-alt"></i> Best of NCS
+                    <span class="subtitle">Favourite Sounds</span>
+                </h1>
+            </div>
+
+            <div class="songItemContainer">
+                <!-- Song 1 -->
+                <div class="songItem">
+                    <div class="songNumber">01</div>
+                    <img src="1.jpg" alt="Pehle Bhi Mein">
+                    <div class="songDetails">
+                        <span class="songName">Pehle Bhi Mein</span>
+                        <span class="songArtist">ANIMAL</span>
+                    </div>
+                    <span class="timestamp">03:34
+                        <i id="0" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 2 -->
+                <div class="songItem">
+                    <div class="songNumber">02</div>
+                    <img src="2.jpg" alt="Kuch Is Tarah">
+                    <div class="songDetails">
+                        <span class="songName">Kuch Is Tarah</span>
+                        <span class="songArtist">Artist</span>
+                    </div>
+                    <span class="timestamp">04:23
+                        <i id="1" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 3 -->
+                <div class="songItem">
+                    <div class="songNumber">03</div>
+                    <img src="3.jpg" alt="Her">
+                    <div class="songDetails">
+                        <span class="songName">Her</span>
+                        <span class="songArtist">Shubh</span>
+                    </div>
+                    <span class="timestamp">03:32
+                        <i id="2" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 4 -->
+                <div class="songItem">
+                    <div class="songNumber">04</div>
+                    <img src="4.jpg" alt="War">
+                    <div class="songDetails">
+                        <span class="songName">War</span>
+                        <span class="songArtist">AP Dhillon</span>
+                    </div>
+                    <span class="timestamp">03:35
+                        <i id="3" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 5 -->
+                <div class="songItem">
+                    <div class="songNumber">05</div>
+                    <img src="5.jpg" alt="Regrets">
+                    <div class="songDetails">
+                        <span class="songName">Regrets</span>
+                        <span class="songArtist">Jevin Gill, Talha Anjum</span>
+                    </div>
+                    <span class="timestamp">04:00
+                        <i id="4" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 6 -->
+                <div class="songItem">
+                    <div class="songNumber">06</div>
+                    <img src="6.jpg" alt="On Top">
+                    <div class="songDetails">
+                        <span class="songName">On Top</span>
+                        <span class="songArtist">Karan Aujla</span>
+                    </div>
+                    <span class="timestamp">03:40
+                        <i id="5" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 7 -->
+                <div class="songItem">
+                    <div class="songNumber">07</div>
+                    <img src="7.jpg" alt="LIMITS">
+                    <div class="songDetails">
+                        <span class="songName">LIMITS</span>
+                        <span class="songArtist">Perfectly Slowed</span>
+                    </div>
+                    <span class="timestamp">04:15
+                        <i id="6" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 8 -->
+                <div class="songItem">
+                    <div class="songNumber">08</div>
+                    <img src="8.jpg" alt="Mi Amor">
+                    <div class="songDetails">
+                        <span class="songName">Mi Amor</span>
+                        <span class="songArtist">Perfectly Slowed</span>
+                    </div>
+                    <span class="timestamp">03:50
+                        <i id="7" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 9 -->
+                <div class="songItem">
+                    <div class="songNumber">09</div>
+                    <img src="9.jpg" alt="Rubicon Drill">
+                    <div class="songDetails">
+                        <span class="songName">Rubicon Drill</span>
+                        <span class="songArtist">Parmish Verma</span>
+                    </div>
+                    <span class="timestamp">04:10
+                        <i id="8" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+
+                <!-- Song 10 -->
+                <div class="songItem">
+                    <div class="songNumber">10</div>
+                    <img src="10.jpg" alt="Unbreakable">
+                    <div class="songDetails">
+                        <span class="songName">Unbreakable</span>
+                        <span class="songArtist">Tarna</span>
+                    </div>
+                    <span class="timestamp">03:25
+                        <i id="9" class="far songItemPlay fa-play-circle"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" id="myProgressBar">
+
+        <div class="controls-container">
+            <div class="icons">
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+
+            <div class="volume">
+                <i class="fas fa-volume-up" id="volumeIcon"></i>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+
+        <div class="songInfo">
+
+            <span id="masterSongName">Play Any Song from the list...</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+    <script>
+        document.addEventListener('gesturestart', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
